@@ -1,0 +1,8 @@
+* 323be97 (HEAD -> main, origin/main) Updated message to Crazy World
+*   9ba558a Merged Happy branch changes into main (Hello Very Happy World)
+|\  
+| * 2d283de (origin/Happy, Happy) Updated message to Happy World
+* | 9c9bbfd Updated message to Very Crool World
+|/  
+* 9b6f352 Updated message to Crool World
+* 6f9a3f5 Initial commit of HelloWorld.c

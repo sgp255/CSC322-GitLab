@@ -1,0 +1,33 @@
+cd ~/labtask-06-sgp255
+mkdir GitLab
+cd GitLab
+echo -e '#include <stdio.h>\n\nint main() {\n    printf("Hello World!\\n");\n    return 0;\n}' > HelloWorld.c
+git init
+git branch -M main
+git add HelloWorld.c
+git commit -m "Initial commit of HelloWorld.c"
+git remote add origin https://github.com/GeoffsUMStuff/labtask-06-sgp255.git
+git push -u origin main
+echo -e '#include <stdio.h>\n\nint main() {\n    printf("Hello Crool World!\\n");\n    return 0;\n}' > HelloWorld.c
+git add HelloWorld.c
+git commit -m "Updated message to Crool World"
+git push
+git branch Happy
+git switch Happy
+echo -e '#include <stdio.h>\n\nint main() {\n    printf("Hello Happy World!\\n");\n    return 0;\n}' > HelloWorld.c
+git add HelloWorld.c
+git commit -m "Updated message to Happy World"
+git push -u origin Happy
+git switch main
+echo -e '#include <stdio.h>\n\nint main() {\n    printf("Hello Very Crool World!\\n");\n    return 0;\n}' > HelloWorld.c
+git add HelloWorld.c
+git commit -m "Updated message to Very Crool World"
+git merge Happy
+# resolve conflict in HelloWorld.c to "Hello Very Happy World"
+git add HelloWorld.c
+git commit -m "Merged Happy branch changes into main (Hello Very Happy World)"
+git push
+echo -e '#include <stdio.h>\n\nint main() {\n    printf("Hello Crazy World!\\n");\n    return 0;\n}' > HelloWorld.c
+git add HelloWorld.c
+git commit -m "Updated message to Crazy World"
+git push
